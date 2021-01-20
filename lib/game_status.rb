@@ -1,4 +1,4 @@
-require "pry"
+#require "pry"
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
 end
@@ -17,7 +17,7 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.select do |win_combo|
-  binding.pry
+  #binding.pry
   win_combo[0] == position_taken?(board, index) &&
    win_combo[1] == position_taken?(board, index) &&
 win_combo[2] == position_taken?(board, index) 
