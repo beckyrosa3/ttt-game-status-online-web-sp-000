@@ -18,8 +18,8 @@ end
 def won?(board)
 WIN_COMBINATIONS.select do |win_combo|
   #binding.pry
-  board[win_combo[0] ] == board[win_combo[1] ] &&
-  board[win_combo[1] ] == board[win_combo[2] ] &&
+  board[win_combo[0]] == board[win_combo[1]] &&
+  board[win_combo[1]] == board[win_combo[2]] &&
   position_taken?(board, win_combo[0])
 
   end
