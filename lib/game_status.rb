@@ -15,12 +15,12 @@ end
     [6,4,2]
 ]
 
-def won?(board, index)
+def won?(board)
 WIN_COMBINATIONS.select do |win_combo|
   #binding.pry
   board[win_combo[0] ] == board[win_combo[1] ] &&
   board[win_combo[1] ] == board[win_combo[2] ] &&
-  position_taken?(board, index)
+  position_taken?(board, index) == "X" || "O"
 
   end
 end
