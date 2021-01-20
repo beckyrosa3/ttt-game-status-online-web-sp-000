@@ -24,7 +24,7 @@ def won?(board)
 print WIN_COMBINATIONS.select do |win_combo|
     end
   end
-
+end
 
 
 
