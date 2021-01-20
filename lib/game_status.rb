@@ -17,6 +17,7 @@ end
 
 def won?(board)
 WIN_COMBINATIONS.select do |win_combo|
+  binding.pry
   win_combo[0] == win_combo[1] &&
   win_combo[1] == win_combo[2] &&
   position_taken?(board, index)
