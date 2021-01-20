@@ -25,11 +25,16 @@ def won?(board)
     end
   end
 
-
-
-
 def full?(board)
   board.none? do |input|
     input == " "
+  end
+end
+
+def draw?(board)
+  if won?(board) || full?(board)
+    false
+  else
+    true
   end
 end
