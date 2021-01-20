@@ -15,7 +15,7 @@ end
     [6,4,2]
 ]
 
-def won?(board)
+def won?(board, index)
 WIN_COMBINATIONS.select do |win_combo|
   #binding.pry
   board[win_combo[0] ] == board[win_combo[1] ] &&
