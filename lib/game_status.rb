@@ -39,10 +39,10 @@ def draw?(board)
   end
 end
 
-def over(board)
+def over?(board)
   if won?(board) || full?(board) || draw?(board)
     true
   else
     false
-  end  
+  end
 end
